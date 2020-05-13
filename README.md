@@ -1,5 +1,5 @@
 # Overview
-Transcription from video using Cloud Speech-to-Text.
+Transcription from video using Cloud Speech-to-Text. (Japanese)
 
 # Preparation
 - Create the Google Storage Bucket.
@@ -34,4 +34,9 @@ $ docker build -t [tag_name] .
 # Transcription
 ```sh
 $ docker run -v /path/to/output_dir:/host_dir -v ~/.config/:/root/.config/ --env-file .env -it [tag_name]
+```
+
+# Check the artifact
+```sh
+$ cat /path/to/output_dir/transcribed_${VOICE_FILE}.txt
 ```
