@@ -2,6 +2,7 @@
 
 from google.cloud import speech_v1
 from google.cloud.speech_v1 import enums
+import os
 import io
 
 
@@ -14,7 +15,7 @@ def long_running_recognize(gs_path):
 
     client = speech_v1.SpeechClient()
 
-    language_code = "ja-JP"
+    language_code = os.environ["LANGUAGE_CODE"]
 
     sample_rate_hertz = 16000
 

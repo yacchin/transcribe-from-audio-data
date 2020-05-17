@@ -1,12 +1,12 @@
 # Overview
-Transcription from video using Cloud Speech-to-Text. (Japanese)
+Transcription from video using Cloud Speech-to-Text.
 
 # Preparation
 - Create the Google Storage Bucket.
 
 - Put the video file.
 ```sh
-$ cd /path/to/transcribe-from-video-data
+$ cd /path/to/transcribe-from-video
 $ cp /path/to/video.mp4 ./
 ```
 
